@@ -22,7 +22,6 @@ main .upper::first-letter {
     line-height: 0.8;
 }
 
-
  hr {
     display: block;
     margin-top: 0;
@@ -32,7 +31,7 @@ main .upper::first-letter {
 
  h2, h3 {
      font-family: 'aclonicaregular';
-     font-size: 1.25rem;
+     font-size: .8rem;
  }
 
  @media screen and (min-width: 550px) {
@@ -121,6 +120,7 @@ main {
 }
 
 .floated {
+    width: 250px;
     float: right;
     margin: 10px;
 }
