@@ -24,7 +24,6 @@ main .upper::first-letter {
 
  hr {
     display: block;
-    margin-top: 0;
     border-width: 3px;
     border-color: rgb(84, 41, 30);
 }
@@ -42,7 +41,6 @@ main .upper::first-letter {
     font-size: 3rem;
   }
 }
-
 
 /* ########## CABEÇALHO ##########  */
 
@@ -73,8 +71,11 @@ header img {
 header .menu ul li {
     font-family: 'aclonicaregular';
     font-size: 1.5rem;
-    padding-bottom: 20px;
     margin-right: 5px;
+}
+
+header .menu li:hover {
+    transform: scale(1.2);
 }
 
 header .menu a {
@@ -163,7 +164,11 @@ main .vocacao img {
     display: none;
 }
 
-/* Fazer com que as imagens se encaixem no meio da tela, aumentar de tamanho, e uma delas, exclusivamente, aumentar com escala menor para não fugir do tamanho do background */
+.icon:hover {
+    transform: scale(1.3)
+}
+
+/* Fazer com que as imagens se encaixem no meio da tela, aumentar de tamanho, e duas delas, exclusivamente aumentar com escala menor para não fugir do tamanho do background */
 
 @media screen and (min-width: 550px) {
     .screenshots {
@@ -237,17 +242,7 @@ input {
     }
 }
 
-/* ########## FOOTER ########## */
-
 /* ########## ANIMATION ########## */
-
-header .menu li:hover {
-    transform: scale(1.2);
-}
-
-.icon:hover {
-    transform: scale(1.3)
-}
 
 .logo {
     vertical-align: center;
@@ -260,11 +255,43 @@ header .menu li:hover {
         opacity: 0;
         transform: translateX(+200px)
     }
-    50% {
-        opacity: 0.5;
-    }
     to {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+/* ########## FOOTER ########## */
+
+footer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(84, 41, 30);
+    background-size: cover;
+    padding: 20px;
+}
+
+footer i {
+    padding: 15px 50px;
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+footer .links i:hover {
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+footer .sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-size: cover;
+    background-color: black;
+}
+
+footer .sobre p {
+    margin: 3px;
 }
