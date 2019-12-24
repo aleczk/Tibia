@@ -1,0 +1,232 @@
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8rem; 
+ }
+
+ body .container {
+     max-width: 1440px;
+     margin: auto;
+ }
+
+ p {
+    text-align: justify;
+    line-height: 1.6;
+    text-indent: 4em;
+}
+
+main .upper::first-letter {
+    text-transform: uppercase;
+    font-family: 'martelregular';
+    color: rgb(90, 0, 0);
+    font-size: 4rem;
+    line-height: 0.8;
+}
+
+ hr {
+    display: block;
+    margin-top: 0;
+    border-width: 3px;
+    border-color: rgb(84, 41, 30);
+}
+
+ h2, h3 {
+     font-family: 'aclonicaregular';
+     font-size: 3rem;
+ }
+
+
+/* ########## CABEÇALHO ##########  */
+
+.logo img{
+    vertical-align: center;
+    padding: 20px;
+}
+
+ header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(84, 41, 30);
+    background-size: cover;
+    padding-top: 20px;
+}
+
+header img {
+    width: 150px;
+}
+
+ header .menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+header .menu ul li {
+    font-family: 'aclonicaregular';
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    margin-right: 5px;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 550px){
+    header .menu ul {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 5%;
+    }
+  }
+
+@media screen and (min-width: 900px){
+    header  {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    }
+    header .menu ul {
+        padding-left: 500px;
+    }
+    header .menu ul li{
+        font-size: 1.5rem;
+    }
+    .logo img {
+    position: relative;
+    top: -10px;
+    }
+}
+
+
+/* ########## CORPO ########## */
+
+main {
+    display: flex;
+    flex-direction: column;
+    background: rgb(253, 239, 214);
+    background-size: cover;
+    padding: 20px;
+}
+
+.floated {
+    float: right;
+    margin: 10px;
+}
+
+.monstros {
+    width: 300px;
+    padding: 10px;
+}
+
+main img {
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+main h2, main h3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main .principal {
+    width: 70px;
+}
+
+main .vocacao img {
+    width: 100px;
+}
+
+#annihi img, #banshee img, #desert img {
+    width: 100px;
+}
+
+/* Fazer com que as imagens se encaixem no meio da tela, aumentar de tamanho, e uma delas, exclusivamente, aumentar com escala menor para não fugir do tamanho do background */
+
+@media screen and (min-width: 550px) {
+    .screenshots {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .centralizar {
+        align-self: center;
+        justify-self: center;
+        margin-top: 10px;
+        transition: all .5s ease-in-out;
+    }
+    .diminuir2 {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .centralizar:hover:not(.diminuir):not(.diminuir2) {
+        transform: scale(2.3);
+    } 
+    .diminuir:hover {
+        transform: scale(1.9);
+    }
+    .diminuir2:hover {
+        transform: scale(1.9);
+    }
+}
+
+/* ########## FORM ########## */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario form {
+    margin-bottom: 5rem;
+}
+
+form, label {
+    font-size: larger;
+    width: 150px;
+}
+
+input {
+    margin-bottom: .75em;
+}
+
+/* ########## FOOTER ########## */
+
+/* ########## ANIMATION ########## */
+
+header .menu li:hover {
+    transform: scale(1.2);
+}
+
+.icon:hover {
+    transform: scale(1.3)
+}
+
+
+
+.logo {
+    vertical-align: center;
+    animation: animacao_logo;
+    animation-duration: 5s;
+}
+
+@keyframes animacao_logo {
+    from {
+        opacity: 0;
+        transform: translateX(+200px)
+    }
+    50% {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
