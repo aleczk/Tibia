@@ -145,6 +145,10 @@ main .vocacao img {
     width: 100px;
 }
 
+.screenshots {
+    display: none;
+}
+
 /* Fazer com que as imagens se encaixem no meio da tela, aumentar de tamanho, e uma delas, exclusivamente, aumentar com escala menor para não fugir do tamanho do background */
 
 @media screen and (min-width: 550px) {
