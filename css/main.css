@@ -116,6 +116,10 @@ main {
     margin: 10px;
 }
 
+.screenshots {
+    display: none;
+}
+
 .monstros {
     width: 300px;
     padding: 10px;
