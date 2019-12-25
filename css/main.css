@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Verdana, Arial, 'Times New Roman', sans-serif;
     font-size: 0.8rem;
  }
 
@@ -113,7 +113,7 @@ header .menu a {
 main {
     display: flex;
     flex-direction: column;
-    background: rgb(253, 239, 214);
+    background: rgb(255, 242, 219);
     background-size: cover;
     padding: 20px;
 }
@@ -289,5 +289,5 @@ footer .sobre {
 
 footer .sobre p {
     margin: 3px;
-    color: whitesmoke
+    color: whitesmoke;
 }
