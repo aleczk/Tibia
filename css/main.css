@@ -12,6 +12,7 @@ body {
     text-align: justify;
     line-height: 1.6;
     text-indent: 4em;
+    color: rgb(90, 40, 0);
 }
 
 main .upper::first-letter {
@@ -106,7 +107,6 @@ header .menu a {
         top: -5px;
     }
 }
-
 
 /* ########## CORPO ########## */
 
@@ -283,11 +283,11 @@ footer .sobre {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: whitesmoke;
     background-size: cover;
     background-color: black;
 }
 
 footer .sobre p {
     margin: 3px;
+    color: whitesmoke
 }
