@@ -33,7 +33,7 @@ main .upper::first-letter {
      font-size: .8rem;
  }
 
- @media screen and (min-width: 550px) {
+ @media screen and (min-width: 650px) {
     main .upper::first-letter {
     font-size: 4rem;
     }
@@ -85,7 +85,7 @@ header .menu a {
     color: white;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 700px) {
     header .menu ul{
       display: grid;
       grid-template-columns: repeat(5, 1fr);
