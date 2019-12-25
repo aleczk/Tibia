@@ -131,10 +131,6 @@ main {
     padding: 10px;
 }
 
-.screenshots {
-    display: none;
-}
-
 main img {
     vertical-align: middle;
     padding-top: 10px;
@@ -160,13 +156,14 @@ main .vocacao img {
     width: 50px;
 }
 
-.screenshots {
-    display: none;
-}
-
 .icon:hover {
     transform: scale(1.3)
 }
+
+.screenshots .centralizar:not(.mobile) {
+    display: none;
+}
+
 
 /* Fazer com que as imagens se encaixem no meio da tela, aumentar de tamanho, e duas delas, exclusivamente aumentar com escala menor para não fugir do tamanho do background */
 
