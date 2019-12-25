@@ -34,6 +34,19 @@ main .upper::first-letter {
      font-size: .8rem;
  }
 
+ body a {
+    color: rgb(0, 66, 148);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: rgb(0, 99, 220);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
  @media screen and (min-width: 650px) {
     main .upper::first-letter {
     font-size: 4rem;
