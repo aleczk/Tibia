@@ -85,29 +85,25 @@ header .menu a {
     color: white;
 }
 
-@media screen and (min-width: 550px){
-    header .menu ul {
+@media screen and (min-width: 550px) {
+    header .menu ul{
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-gap: 5%;
+      align-items: center;
+      justify-content: center;
     }
   }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1000px) {
     header  {
     display: flex;
     flex-direction: row;
-    }
-    header .menu ul li {
-        display: flex;
-        flex-direction: row;
-        font-size: 1.5rem;
-        padding-left: 10%;
-        margin-left: 5%;
+    justify-content: space-around;
     }
     .logo img {
-    position: relative;
-    top: -5px;
+        position: relative;
+        top: -5px;
     }
 }
 
