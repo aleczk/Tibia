@@ -205,7 +205,7 @@ main .vocacao img {
 
 @media screen and (min-width: 900px) {
     .screenshots img:hover {
-        transform: scale(1.9);
+        transform: scale(1.8);
     }
 }
 
