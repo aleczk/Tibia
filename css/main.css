@@ -156,16 +156,23 @@ main .vocacao img {
     width: 50px;
 }
 
+.icon {
+    transition: all .2s ease-in-out;
+}
+
 .icon:hover {
-    transform: scale(1.3)
+    transform: scale(1.3);
 }
 
-.screenshots .centralizar:not(.mobile) {
-    display: none;
+/* Fazer com que APENAS as imagens com classe .mobile apareçam quando a resolução for muito baixa.*/
+
+@media screen and (max-width: 549px) {
+    .screenshots .centralizar:not(.mobile) {
+        display: none;
+    }
 }
 
-
-/* Fazer com que as imagens se encaixem no meio da tela, aumentar de tamanho, e duas delas, exclusivamente aumentar com escala menor para não fugir do tamanho do background */
+/* Fazer com que as imagens se encaixem no meio da tela, aumentar de tamanho, e duas delas, exclusivamente aumentar com escala menor para não fugir do tamanho do background. */
 
 @media screen and (min-width: 550px) {
     .screenshots {
