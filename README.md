@@ -4,6 +4,6 @@
 
 **Inspirações:** O layout foi inspirado no próprio site do Tibia ([tibia.com](tibia.com)) e no Fansite TibiaBR ([tibiabr.com](TibiaBR.com)).
 
-**Descrição das funcionalidades:** Há apenas um elemento de animation e vários hovers para a melhor visualização das screenshots. Na versão mais simples, mobile, width < 500px, o site apresenta-se muito simples, com apenas poucas screenshots do jogo, devido ao limite de espaço e o fato de JS estar proibido, pois um site-galeria com vários previews seria mais adequado. Porém, utilizando seletores, consegui resgatar algumas imagens que por coincidência cabem na versão mais simples.
+**Descrição das funcionalidades:** Há apenas um elemento de animation e vários hovers para a melhor visualização das screenshots e ícones. Na versão mais simples, mobile, width < 550px, o site apresenta-se muito simples, com apenas poucas screenshots do jogo, devido ao limite de espaço.
 
 **Contato:** alecsandercamilo@gmail.com
