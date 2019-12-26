@@ -1,3 +1,5 @@
+/* ########## GERAL ########## */
+
 body {
     font-family: Verdana, Arial, 'Times New Roman', sans-serif;
     font-size: 0.8rem;
@@ -29,12 +31,16 @@ main .upper::first-letter {
     border-color: rgb(84, 41, 30);
 }
 
+hr:last-child {
+    margin-top: 40px;
+}
+
  h2, h3 {
      font-family: 'aclonicaregular';
      font-size: .8rem;
  }
 
- body a {
+body a {
     color: rgb(0, 66, 148);
     font-weight: bold;
     text-decoration: none;
@@ -44,6 +50,12 @@ body a:hover {
     color: rgb(0, 99, 220);
     font-weight: bold;
     text-decoration: underline;
+}
+
+body .sites a {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
 }
 
 
@@ -91,7 +103,7 @@ header .menu ul li {
 }
 
 header .menu li:hover {
-    transform: scale(1.2);
+    transform: scale(1.20);
 }
 
 header .menu a {
@@ -99,27 +111,15 @@ header .menu a {
     color: white;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
     header .menu ul{
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(6, 0.75fr);
       grid-gap: 5%;
       align-items: center;
       justify-content: center;
     }
   }
-
-@media screen and (min-width: 1000px) {
-    header  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    }
-    .logo img {
-        position: relative;
-        top: -5px;
-    }
-}
 
 /* ########## CORPO ########## */
 
@@ -143,7 +143,7 @@ main {
 }
 
 main img {
-    vertical-align: middle;
+    vertical-align: center;
     padding-top: 10px;
 }
 
@@ -152,11 +152,6 @@ main h2, main h3 {
     vertical-align: middle;
     margin-left: 20px;
     margin-right: 20px;
-}
-
-main .principal {
-    width: 50px;
-    margin-bottom: 5px;
 }
 
 main .vocacao img {
@@ -168,7 +163,13 @@ main .vocacao img {
 }
 
 .icon {
+    vertical-align: middle;
     transition: all .2s ease-in-out;
+}
+
+main .icon {
+    width: 50px;
+    margin-bottom: 5px;
 }
 
 .icon:hover {
@@ -207,7 +208,7 @@ main .vocacao img {
         width: 200px;
         padding: 10px;
     }
-    main .principal {
+    main .icon {
         width: 70px;
     }
     main .vocacao img {
