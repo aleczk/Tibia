@@ -35,10 +35,10 @@ hr:last-child {
     margin-top: 40px;
 }
 
- h2, h3 {
+h2 {
      font-family: 'aclonicaregular';
-     font-size: .8rem;
- }
+     font-size: 1rem;
+}
 
 body a {
     color: rgb(0, 66, 148);
@@ -58,12 +58,22 @@ body .sites a {
     font-size: larger;
 }
 
+.resize {
+    width: 50%;
+}
+
+@media screen and (min-width: 400px) {
+    h2 {
+        font-family: 'aclonicaregular';
+        font-size: 1.8rem;
+    }
+}
 
  @media screen and (min-width: 650px) {
     main .upper::first-letter {
     font-size: 4rem;
     }
-    h2, h3 {
+    h2 {
     font-size: 3rem;
   }
 }
@@ -72,7 +82,7 @@ body .sites a {
 
 .logo img{
     vertical-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
  header {
@@ -147,37 +157,22 @@ main img {
     padding-top: 10px;
 }
 
-main h2, main h3 {
+main h2 {
     display: inline-block;
     vertical-align: middle;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-main .vocacao img {
-    width: 50px;
-}
-
-#annihi img, #banshee img, #desert img {
-    width: 50px;
-}
-
 .icon {
+    width: 50px;
     vertical-align: middle;
     transition: all .2s ease-in-out;
-}
-
-main .icon {
-    width: 50px;
     margin-bottom: 5px;
 }
 
 .icon:hover {
     transform: scale(1.3);
-}
-
- .screenshots .resize {
-    width: 50%;
 }
 
 /* Fazer com que APENAS as imagens com classe .mobile apareçam quando a resolução for muito baixa.*/
@@ -187,7 +182,7 @@ main .icon {
         display: none;
     }
     .screenshots .mobile {
-        margin-left: -10px;
+        margin-left: -15px;
     }
 }
 
@@ -214,8 +209,8 @@ main .icon {
     main .vocacao img {
         width: 100px;
     }
-    #annihi img, #banshee img, #desert img {
-        width: 100px;
+    .quest .icon {
+        width: px;
     }
 }
 
@@ -234,6 +229,10 @@ main .icon {
     align-items: center;
 }
 
+.formulario h2:nth-child(2) {
+    margin-top: -1rem;
+}
+
 .button {
     margin-top: 1rem;
 }
@@ -242,13 +241,10 @@ input {
     margin-bottom: .75rem;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 400px) {
     form, label {
         font-size: larger;
         width: 150px;
-    }
-    .formulario #pergunta2{
-        margin-top: -25px;
     }
 }
 
@@ -283,7 +279,7 @@ footer .links {
 }
 
 footer i {
-    padding: 15px 50px;
+    padding: 15px 30px;
     font-size: 3rem;
     color: whitesmoke;
 }
@@ -304,4 +300,15 @@ footer .sobre {
 footer .sobre p {
     margin: 3px;
     color: whitesmoke;
+}
+
+@media screen and (min-width: 400px) {
+    footer i {
+        padding: 15px 45px;
+    }
+}
+@media screen and (min-width: 750px) {
+    footer i {
+        padding: 15px 100px;
+    }
 }
