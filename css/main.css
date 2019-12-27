@@ -176,9 +176,20 @@ main h2 {
     transform: scale(1.3);
 }
 
+/* Nenhuma screenshot aparecer caso width < 349 e reduzir um pouco os ícones */
+
+@media screen and (max-width: 349px){
+    .screenshots {
+        display: none;
+    }
+    .icon {
+        width: 35px;
+    }
+}
+
 /* Fazer com que APENAS as imagens com classe .mobile apareçam quando a resolução for muito baixa.*/
 
-@media screen and (max-width: 549px) {
+@media screen and (min-width: 350px) {
     .screenshots img:not(.mobile) {
         display: none;
     }
@@ -208,6 +219,7 @@ main h2 {
         width: 100px;
     }
 }
+
 @media screen and (min-width: 900px) {
     .screenshots img:hover {
         transform: scale(1.9);
