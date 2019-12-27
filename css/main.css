@@ -231,9 +231,6 @@ main h2 {
     .screenshots .resize:hover {
         transform: scale(1.1);
     }
-    .monstros {
-        width: 200px;
-        padding: 10px;
 }
 
 @media screen and (min-width: 900px) {
