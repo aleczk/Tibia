@@ -59,13 +59,13 @@ body .sites a {
 }
 
 .resize {
-    width: 50%;
+    width: 90%;
 }
 
 @media screen and (min-width: 400px) {
     h2 {
         font-family: 'aclonicaregular';
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -93,7 +93,6 @@ body .sites a {
     background: rgb(84, 41, 30);
     background-size: cover;
     padding-top: 20px;
-    
 }
 
 header img {
@@ -114,7 +113,7 @@ header .menu ul li {
 }
 
 header .menu li:hover {
-    transform: scale(1.20);
+    transform: scale(1.3);
 }
 
 header .menu a {
@@ -129,7 +128,7 @@ header .menu a {
       grid-gap: 5%;
       align-items: center;
       justify-content: center;
-    }
+  }
 }
 
 /* ########## CORPO ########## */
@@ -176,9 +175,9 @@ main h2 {
     transform: scale(1.3);
 }
 
-/* Nenhuma screenshot aparecer caso width < 349 e reduzir um pouco os ícones */
+/* Fazer com que APENAS as imagens com classe .mobile apareçam quando a resolução for muito baixa.*/
 
-@media screen and (max-width: 349px){
+@media screen and (max-width: 349px) {
     .screenshots {
         display: none;
     }
@@ -187,14 +186,15 @@ main h2 {
     }
 }
 
-/* Fazer com que APENAS as imagens com classe .mobile apareçam quando a resolução for muito baixa.*/
-
-@media screen and (min-width: 350px) {
+@media screen and (max-width: 549px) {
     .screenshots img:not(.mobile) {
         display: none;
     }
-    .screenshots .mobile {
-        margin-left: -15px;
+    .mobile {
+        margin-left: -10px;
+    }
+    .icon {
+        width: 40px;
     }
 }
 
@@ -208,7 +208,7 @@ main h2 {
     .screenshots img {
         align-self: center;
         justify-self: center;
-        margin-top: 10px;
+        margin-bottom: 30px;
         transition: all .5s ease-in-out;
     }
     .monstros {
@@ -216,12 +216,21 @@ main h2 {
         padding: 10px;
     }
     .icon {
-        width: 100px;
+        width: 80px;  
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .screenshots img:hover:not(.resize) {
+        transform: scale(1.3);
+    }
+    .screenshots .resize:hover {
+        transform: scale(1.1);
     }
 }
 
 @media screen and (min-width: 900px) {
-    .screenshots img:hover {
+    .screenshots img:hover:not(.resize) {
         transform: scale(1.9);
     }
 }
