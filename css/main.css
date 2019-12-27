@@ -55,7 +55,7 @@ body a:hover {
 body .sites a {
     display: flex;
     justify-content: center;
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 10px;
 }
 
@@ -76,7 +76,10 @@ body .sites a {
     }
     h2 {
     font-size: 3rem;
-  }
+    }
+  body .sites a {
+    font-size: x-large
+    }
 }
 
 /* ########## CABEÇALHO ##########  */
