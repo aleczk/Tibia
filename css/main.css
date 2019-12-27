@@ -80,9 +80,10 @@ body .sites a {
 
 /* ########## CABEÇALHO ##########  */
 
-.logo img{
+.logo img {
     vertical-align: center;
     padding: 10px;
+    margin-right: -10px;
 }
 
  header {
@@ -203,17 +204,9 @@ main h2 {
         width: 200px;
         padding: 10px;
     }
-    main .icon {
-        width: 70px;
-    }
-    main .vocacao img {
+    .icon {
         width: 100px;
-    }
-    .quest .icon {
-        width: px;
-    }
 }
-
 @media screen and (min-width: 900px) {
     .screenshots img:hover {
         transform: scale(1.9);
