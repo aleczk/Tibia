@@ -6,6 +6,6 @@
 
 **Descrição das funcionalidades:** Há apenas um elemento de animation e vários hovers para a melhor visualização das screenshots e ícones. Na versão mais simples, mobile, width < 550px, o site apresenta-se muito simples, com apenas poucas screenshots do jogo, devido ao limite de espaço.
 
-O site **necessita de pelo menos 350px de width** para funcionar adequadamente com pelo menos 3 screenshots e ícones funcionais, e o mínimo suportado antes das linhas começarem a quebrar é de exatamente **318px** de width.
+O site **necessita de pelo menos 350px de width** para funcionar adequadamente com pelo menos 3 screenshots e ícones funcionais, e o mínimo suportado antes das linhas começarem a quebrar é de exatamente **318px** de width. __(Testado no Google Chrome)__
 
 **Contato:** alecsandercamilo@gmail.com
