@@ -1,6 +1,6 @@
 # Tibia - Projeto Final LM IFPB 2019.2
 
-**Descrição do projeto:** uma página simples que introduz ao usuário alguns fatos sobre o jogo Tibia.
+**Descrição do projeto:** uma página simples que introduz ao usuário o MMORPG Tibia com um certo tom saudosista.
 
 **Inspirações:** O layout foi inspirado no próprio site do Tibia ([tibia.com](tibia.com)) e no Fansite TibiaBR ([tibiabr.com](TibiaBR.com)).
 
