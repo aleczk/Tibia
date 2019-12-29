@@ -22,7 +22,7 @@ main .upper::first-letter {
     font-family: 'martelregular';
     color: rgb(90, 0, 0);
     font-size: 2rem;
-    line-height: 0.8;
+    line-height: 1;
 }
 
  hr {
