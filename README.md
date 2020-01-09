@@ -8,4 +8,4 @@
 
 **Descrição das funcionalidades:** Há apenas um elemento de animation, no logo, e vários hovers para a melhor visualização das screenshots e ícones. Na versão mais simples, mobile, width < 550px, o site apresenta-se muito simples, com apenas poucas screenshots do jogo, devido ao limite de espaço.
 
-**Contato:** alecsandercamilo@gmail.com // 20192370010
+**Contato:** alecsandercamilo@gmail.com
