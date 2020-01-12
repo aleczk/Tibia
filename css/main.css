@@ -84,12 +84,6 @@ body .sites a {
 
 /* ########## CABEÇALHO ##########  */
 
-.logo img {
-    vertical-align: center;
-    padding: 10px;
-    margin-right: -10px;
-}
-
  header {
     display: flex;
     flex-direction: column;
@@ -269,8 +263,8 @@ input {
 
 /* ########## ANIMATION ########## */
 
-.logo {
-    vertical-align: center;
+.logo img {
+    margin-right: -15px;
     animation: animacao_logo;
     animation-duration: 5s;
 }
@@ -279,6 +273,9 @@ input {
     from {
         opacity: 0;
         transform: translateX(+200px)
+    }
+    75% {
+        opacity: 0.25;
     }
     to {
         opacity: 1;
