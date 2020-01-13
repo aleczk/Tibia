@@ -266,7 +266,7 @@ input {
 .logo img {
     margin-right: -15px;
     animation: animacao_logo;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 
 @keyframes animacao_logo {
@@ -275,7 +275,7 @@ input {
         transform: translateX(+200px)
     }
     75% {
-        opacity: 0.25;
+        opacity: 0.5;
     }
     to {
         opacity: 1;
