@@ -137,13 +137,12 @@ header .menu a {
     animation-duration: 3s;
 }
 
-.logo .sword {
+.logo .swords {
     vertical-align: 0.5rem;
     margin-right: 20px;
     margin-left: 20px;
-    animation: sword;
+    animation: swords forwards;
     animation-duration: 3.3s;
-    animation-fill-mode: forwards;
     opacity: 0;
 }
 
@@ -161,7 +160,7 @@ header .menu a {
     }
 }
 
-@keyframes sword {
+@keyframes swords {
     75% {
         opacity: 0;
     }
