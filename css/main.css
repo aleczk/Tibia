@@ -93,7 +93,7 @@ body .sites a {
     padding-top: 20px;
 }
 
-header img {
+header #tibia {
     width: 150px;
 }
 
@@ -263,10 +263,19 @@ input {
 
 /* ########## ANIMATION ########## */
 
-.logo img {
-    margin-right: -15px;
+.logo #tibia {
+    margin-right: 0px;
     animation: animacao_logo;
     animation-duration: 3s;
+}
+
+.logo .sword {
+    vertical-align: 0.5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+    animation: sword forwards;
+    animation-duration: 3.3s;
+    opacity: 0;
 }
 
 @keyframes animacao_logo {
@@ -280,6 +289,15 @@ input {
     to {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+
+@keyframes sword {
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
