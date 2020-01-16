@@ -101,13 +101,14 @@ header #tibia {
     display: flex;
     flex-direction: column;
     list-style-type: none;
+    align-items: center;
 }
 
 header .menu ul li {
     font-family: 'aclonicaregular';
     font-size: 1.5rem;
-    margin-right: 5px;
-    margin-top: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
 header .menu li:hover {
@@ -127,6 +128,45 @@ header .menu a {
       align-items: center;
       justify-content: center;
   }
+}
+
+/* ########## LOGO ANIMATION ########## */
+
+.logo #tibia {
+    animation: animacao_logo;
+    animation-duration: 3s;
+}
+
+.logo .sword {
+    vertical-align: 0.5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+    animation: sword forwards;
+    animation-duration: 3.3s;
+    opacity: 0;
+}
+
+@keyframes animacao_logo {
+    from {
+        opacity: 0;
+        transform: translateX(+200px)
+    }
+    75% {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes sword {
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* ########## CORPO ########## */
@@ -258,46 +298,6 @@ input {
     form, label {
         font-size: larger;
         width: 150px;
-    }
-}
-
-/* ########## ANIMATION ########## */
-
-.logo #tibia {
-    margin-right: 0px;
-    animation: animacao_logo;
-    animation-duration: 3s;
-}
-
-.logo .sword {
-    vertical-align: 0.5rem;
-    margin-right: 20px;
-    margin-left: 20px;
-    animation: sword forwards;
-    animation-duration: 3.3s;
-    opacity: 0;
-}
-
-@keyframes animacao_logo {
-    from {
-        opacity: 0;
-        transform: translateX(+200px)
-    }
-    75% {
-        opacity: 0.5;
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-@keyframes sword {
-    75% {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
     }
 }
 
