@@ -141,8 +141,9 @@ header .menu a {
     vertical-align: 0.5rem;
     margin-right: 20px;
     margin-left: 20px;
-    animation: sword forwards;
+    animation: sword;
     animation-duration: 3.3s;
+    animation-fill-mode: forwards;
     opacity: 0;
 }
 
