@@ -6,6 +6,6 @@
 
 **Inspirações:** O layout é uma mescla do próprio site do Tibia ([tibia.com](tibia.com)) e do Fansite TibiaBR ([tibiabr.com](TibiaBR.com)).
 
-**Descrição das funcionalidades:** Há dois elementos de animação, sendo um repetido duas vezes, apenas na movimentação do logo principal e nas espadas que se refletem aos seus lados, e vários hovers para a melhor visualização das screenshots e ícones. Na versão mais simples, mobile, width < 550px, o site apresenta-se muito simples, com o número de screenshots reduzido, devido ao limite de espaço. Cores, hyperlinks e fonte, como <i>:first-letter</i> seguem exatamente o modelo do [tibia.com](tibia.com). 
+**Descrição das funcionalidades:** Há dois elementos de animação, sendo um repetido duas vezes, apenas na movimentação do logo principal e nas espadas que se refletem aos seus lados. Há vários hovers para a melhor visualização das screenshots e ícones. Na versão mais simples, mobile, width < 550px, o site apresenta-se mais simples, com o número de screenshots reduzido, devido ao limite de espaço. Cores, hyperlinks e fonte, como <i>:first-letter</i> seguem exatamente o modelo do [tibia.com](tibia.com). 
 
 **Contato:** alecsandercamilo@gmail.com
