@@ -3,14 +3,9 @@
 body {
     font-family: Verdana, Arial, 'Times New Roman', sans-serif;
     font-size: 0.8rem;
- }
+}
 
- body .container {
-    max-width: 1440px;
-    margin: auto;
- }
-
- p {
+p {
     text-align: justify;
     line-height: 1.6;
     text-indent: 4em;
