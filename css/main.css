@@ -70,15 +70,13 @@ body .sites a {
     }
 }
 
- @media screen and (min-width: 650px) {
+
+@media screen and (min-width: 550px) {
     main .upper::first-letter {
-    font-size: 4rem;
+        font-size: 4rem;
     }
     h2 {
-    font-size: 3rem;
-    }
-  body .sites a {
-    font-size: x-large;
+        font-size: 2rem;
     }
 }
 
@@ -209,7 +207,6 @@ main h2 {
 }
 
 .icon {
-    width: 50px;
     vertical-align: middle;
     transition: all .2s ease-in-out;
     margin-bottom: 5px;
@@ -224,9 +221,6 @@ main h2 {
 @media screen and (max-width: 349px) {
     .screenshots {
         display: none;
-    }
-    .icon {
-        width: 35px;
     }
 }
 
@@ -260,7 +254,7 @@ main h2 {
         padding: 10px;
     }
     .icon {
-        width: 80px;  
+        width: 60px;  
     }
 }
 
@@ -348,6 +342,13 @@ footer .sobre p {
         padding: 15px 45px;
     }
 }
+
+@media screen and (min-width: 650px) {
+    body .sites a {
+      font-size: x-large;
+    }
+}
+
 @media screen and (min-width: 750px) {
     footer i {
         padding: 15px 100px;
